@@ -1,0 +1,316 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d39205;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 130px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+nav ul li {
+    margin-right: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Banner Principal */
+.hero {
+    background-image: url('foto12.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 77vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: static;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero .btn {
+    background-color: #ff5722;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e64a19;
+}
+
+/* Seção de Notícias */
+.noticias {
+    padding: 45px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.noticias article {
+    background-color: #fafafa;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.noticias article:hover {
+    transform: scale(1.05);
+}
+
+.noticias img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.noticias h2{
+    left: 0%;
+    display: grid;
+    margin-top: -10%;
+    font-size: 2em;
+    
+    }
+
+/* Seção de Produtos */
+.produtos {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.produto-item {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #1e6b47;
+}
+
+/* Rodapé */
+footer {
+    background-color: #d39205;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.sobre-algueiras {
+    padding: 40px;
+    background-color: #ffffff; /* Fundo branco */
+    text-align: left; 
+}
+
+.sobre-algueiras h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.sobre-algueiras p {
+    font-size: 1.2em;
+    text-align: left; 
+    
+    
+    line-height: 1.6; /* Melhor leitura */
+    
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    display:block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: start;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+}
+/* O modal (fundo) */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; 
+    z-index: 1000; /* Ficar na frente */
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+}
+
+/* Imagem do modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 200px;
+}
+
+/* Texto descritivo */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} 
+.video-container {
+    margin-top: 15px;
+    max-width: 550px; /* Limita a largura da caixa do vídeo */
+    margin: 0 auto; /* Centraliza a caixa */
+    border-radius: 16px; /* Arredonda as bordas */
+    overflow: hidden; /* Garante que o conteúdo interno respeite o arredondamento */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Adiciona uma sombra suave */
+}
+
+.video-container iframe {
+    width: 550px; /* Garante que o iframe se ajuste à largura da caixa */
+    height: 309.77px; /* Mantém a proporção ao ajustar a largura */
+    background-color: #ffffff; /* Fundo branco */
+    
+}
+
+.video-section {
+    background-color: #ffffff; /* Define o fundo da seção de vídeo como branco */
+    padding: 20px 0; /* Adiciona espaçamento superior e inferior */
+    padding: 40px;
+    background-color: #ffffff; /* Fundo branco */
+    text-align: left; 
+}
+.video-section h2 {
+    left: 0%;
+    display: auto;
+    margin-top: 20px;
+    font-size: 2em;
+    
+}
+
+    

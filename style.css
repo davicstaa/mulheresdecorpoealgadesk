@@ -1,0 +1,107 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d39205;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 130px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em; /* Mantém o tamanho original das letras */
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Seção de Produtos */
+.produtos {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.produto-item {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto-item img {
+    max-width: 300px; /* Tamanho padrão para todas as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px 0;
+}
+
+.btn-comprar {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #1e6b47;
+}
+
+/* Rodapé */
+footer {
+    background-color: #d39205; /* Mantive a cor original do rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width:1020px){
+    .menu-desktop{
+        display: none;
+    
+    }
+    }
+    @media (min-width: 1021px) {
+        .menu-mobile {
+            display: none;
+        }
+    
+        .overlay-menu {
+            display: none;
+        }
+    }
